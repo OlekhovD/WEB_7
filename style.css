@@ -1,0 +1,21 @@
+header {
+    background-color: #FFCC00;
+    height: 120px;
+    width: 100%;
+}
+.logo {
+    float: left;
+    height: 120px;
+    width: 120px;
+}
+nav{
+    background-color: #87d667;
+}
+footer {
+    background-color: #FFCC00;
+}
+@media (min-width: 850px){
+    header{
+        font-size: 300%;
+    }
+}
