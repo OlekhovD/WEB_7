@@ -2,11 +2,15 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Задание 5</title>
+    <title>Задание 7</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="main.js" defer></script>
+    <script src="calculate.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+    <script src="js/calculator.js" defer></script>
+    <script src="js/slick.min.js" defer></script>
+    <script src="js/gallery.js" defer></script>
 </head>
 <body>
 <div class="back">
@@ -14,7 +18,7 @@
         <div class="container-fluid">
             <div class="col-12 row justify-content-center align-items-center">
                 <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
-                    <img class="logo" src="image2.png" alt = "Логотип">
+                    <img class="logo" src="img/image2.png" alt = "Логотип">
                 Заголовок сайта
                 </div>
             </div>
@@ -65,11 +69,11 @@
                         </p></li>
                         <li>
                             <a href="https://ru.wikipedia.org/wiki/Муравьи">
-                                <img src="image1.jpg" width="200" height="200" alt="flower">
+                                <img src="img/image1.jpg" width="200" height="200" alt="flower">
                             </a>
                         </li>
                         <li>
-                            <img src="image1.jpg" alt="flower" width="200" height="200" usemap="#nav">
+                            <img src="img/image1.jpg" alt="flower" width="200" height="200" usemap="#nav">
                             <map name="nav">
                                 <area shape="circle" coords="75,75,50" href="https://www.youtube.com/watch?v=_5348G7LZQc" alt="круг">
                                 <area shape="rect" coords="125,125,190,190" href="https://ru.wikipedia.org/wiki/Прямоугольник" alt="прямоугольник">
@@ -116,6 +120,60 @@
                     <br/>
                 </form>
                 <p id="price" class="start-price"></p>
+            </div>
+        </div>
+
+        <div class="col-12 row justify-content-center align-items-center " style="padding-right:0;">
+            <h2 class = "text-center" id="gallery">Галерея</h2>
+            <div class="slider">
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/cb1.jpg"  al   t="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/cb2.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/cb3.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/cb4.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/OnePiece1.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/OnePiece2.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/OnePiece3.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/OnePiece4.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/Naruto1.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/Naruto2.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/Naruto3.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/Naruto4.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/sds1.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/hxh1.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/bnha1.jpg"  alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="img-fluid" src ="img/bnha2.jpg"  alt="">
+                </div>
             </div>
         </div>
 
