@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Задание 4</title>
+    <title>Задание 5</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
 <div class="back">
-    <header name="element_id">
+    <header>
         <div class="container-fluid">
             <div class="col-12 row justify-content-center align-items-center">
                 <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
-                    <img class="logo" src="image2.png">
+                    <img class="logo" src="image2.png" alt = "Логотип">
                 Заголовок сайта
                 </div>
             </div>
@@ -66,7 +67,7 @@
                             <a href="https://ru.wikipedia.org/wiki/Муравьи">
                                 <img src="image1.jpg" width="200" height="200" alt="flower">
                             </a>
-                        </li><br>
+                        </li>
                         <li>
                             <img src="image1.jpg" alt="flower" width="200" height="200" usemap="#nav">
                             <map name="nav">
@@ -85,40 +86,73 @@
             </div>
         </div>
 
+        <div class="col-12 row justify-content-center align-items-center " style="padding-right:0;">
+            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 bg-light">
+                <h1 class="text-center">Калькулятор цены одежды</h1>
+                <form>
+                    <p>Введите количество одежды: </p>
+                    <input
+                        type="text"
+                        id = "Clothes_Count"
+                        value=""
+                        placeholder="Количество одежды"
+                    >
+                    <p class="subtitle">Выберите тип одежды:</p>
+                    <select class="form__select" name="type" id="select">
+                        <option value="1" id="firstProduct">Джинсы</option>
+                        <option value="2" id="secondProduct">Обувь</option>
+                        <option value="3" id="threeProduct">Рубашки</option>
+                    </select>
+                    <div class="form__radios" id="shoes_r">
+                        <input type="radio" name="shoes_s" id="shoes_sets" />
+                        <input type="radio" name="shoes_s" value="business" /> Деловые
+                        <input type="radio" name="shoes_s" value="football" /> Футбольные
+                        <input type="radio" name="shoes_s" value="running" /> Беговые
+                    </div>
+                    <div class="form__checkboxes" id="shirt_options">
+                        <input type="checkbox" name="tie" id="tie" /> Галстук
+                        <input type="checkbox" name="cufflinks" id="cufflinks" /> Запонки
+                    </div>
+                    <br/>
+                </form>
+                <p id="price" class="start-price"></p>
+            </div>
+        </div>
+
         <div class="col-12 row justify-content-center align-items-center order-2 order-sm-2 order-md-1 order-lg-1 order-xl-1" style="padding-right:0;">
             <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 bg-light">
-                <table id="table" class="table table-striped table-bordered">
-                    <h1 class="text-center">Таблица</h1>
-                    <tbody>
-                    <tr class="even">
-                        <th colspan="4" class="text-center">Заголовок таблицы</th>
-                    </tr>
-                    <tr>
-                        <td>Ячейка 1</td>
-                        <td>Ячейка 2</td>
-                        <td>Ячейка 3</td>
-                    </tr>
-                    <tr class="even">
-                        <td>Ячейка 4</td>
-                        <td>Ячейка 5</td>
-                        <td>Ячейка 6</td>
-                    </tr>
-                    <tr>
-                        <td>Ячейка 7</td>
-                        <td>Ячейка 8</td>
-                        <td>Ячейка 9</td>
-                    </tr>
-                    <tr class="even">
-                        <td>Ячейка 10</td>
-                        <td>Ячейка 11</td>
-                        <td>Ячейка 12</td>
-                    </tr>
-                    <tr>
-                        <td>Ячейка 13</td>
-                        <td>Ячейка 14</td>
-                        <td>Ячейка 15</td>
-                    </tr>
-                    </tbody>
+                <h1 class="text-center">Таблица</h1>
+                    <table id="table" class="table table-striped table-bordered">
+                        <tbody>
+                        <tr class="even">
+                            <th colspan="3" class="text-center">Заголовок таблицы</th>
+                        </tr>
+                        <tr>
+                            <td>Ячейка 1</td>
+                            <td>Ячейка 2</td>
+                            <td>Ячейка 3</td>
+                        </tr>
+                        <tr class="even">
+                            <td>Ячейка 4</td>
+                            <td>Ячейка 5</td>
+                            <td>Ячейка 6</td>
+                        </tr>
+                        <tr>
+                            <td>Ячейка 7</td>
+                            <td>Ячейка 8</td>
+                            <td>Ячейка 9</td>
+                        </tr>
+                        <tr class="even">
+                            <td>Ячейка 10</td>
+                            <td>Ячейка 11</td>
+                            <td>Ячейка 12</td>
+                        </tr>
+                        <tr>
+                            <td>Ячейка 13</td>
+                            <td>Ячейка 14</td>
+                            <td>Ячейка 15</td>
+                        </tr>
+                        </tbody>
                 </table>
             </div>
         </div>
@@ -126,8 +160,8 @@
         <div class="col-12 row justify-content-center align-items-center order-1 order-sm-1 order-md-2 order-lg-2 order-xl-2 mb-4" style="padding-right:0;">
             <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 bg-light">
                 <div id="form">
-                    <h1>Форма</h1>
-                    <form method="post" role="form">
+                    <h1 class="text-center">Форма</h1>
+                    <form method="post">
                         <div class="form-group">
                             <label>Имя:<br>
                                 <input name="field-name" class="form-control" value="" placeholder="Имя">
